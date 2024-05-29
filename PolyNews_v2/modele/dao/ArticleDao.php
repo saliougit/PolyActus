@@ -20,4 +20,9 @@
             return $data->fetchAll(PDO::FETCH_CLASS, 'Article');
         }
 
+        public function getArticleById($id){
+            $data = $this->bdd->query('SELECT * FROM Article WHERE id = ' .$id);
+            return $data->fetchAll(PDO::FETCH_CLASS, 'Article');
+        }
+
     }

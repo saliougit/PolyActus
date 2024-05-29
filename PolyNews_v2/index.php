@@ -19,7 +19,15 @@
 				$controller->showErrorPage();
 			}
 
-		}else{
+		}else if(strtolower($_GET['action']) === 'article'){
+            if(isset($_GET['id'])){
+                $controller->showArticle($_GET['id']);
+            }else{
+                $controller->showErrorPage();
+            }
+        }
+        
+        else{
 
 			$controller->showAccueil();
 		}

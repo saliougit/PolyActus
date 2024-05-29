@@ -27,6 +27,16 @@
             require_once 'vue/inc/articleByCategorie.php';
         }
 
+
+        public function showArticle($id){
+            $articleDao = new ArticleDao();
+            $categorieDao = new CategorieDao();
+
+            $article = $articleDao->getArticleById($id);
+            $categories = $categorieDao->getAllCategories();
+            require_once 'vue/inc/article.php';
+        }
+
         public function showErrorPage(){
             require_once 'vue/inc/error.php';
         }

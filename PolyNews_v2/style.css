@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Reddit+Mono:wght@200..900&display=swap');
+
+
+:root {
+	--main-color : #FFE5CC;
+	--second-color : #FFCC99;
+	--black : #333;
+	--border : .2rem solid var(--black);
+	--box-shadow : 0 .5rem 1rem rgba(0,0,0,0.1);
+	--white : #FFF;
+
+}
+
+* {
+	font-family: 'Nunito', sans-serif;
+	padding: 0; margin: 0;
+	box-sizing: border-box;
+	outline: none; border: none;
+	text-decoration: none;
+	text-transform : capitalize;
+	list-style-type: none;
+}
+
+*::selection {
+	background-color: var(--second-color);
+	color: var(--white);
+	
+}
+
+
+html {
+	font-size:62.5%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding-top: 6rem;
+}
+
+
+
+#header {
+	background-color: var(--main-color);
+	padding: 2rem 1rem;
+	text-align: center;
+	h1 {
+		font-size:3rem;
+	}
+}
+
+
+#flex ul{
+	padding-top: 2rem;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+
+	li {
+		margin-left: 2rem;
+		padding : 1rem 2rem;
+		border : var(--border);
+		border-radius: 1rem ;
+		font-size: 1.6rem;
+		background-color: var(--second-color);
+		a {
+			color: var(--white);
+		}
+	}
+}
+
+#article {
+	padding: 3rem 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: var(--second-color);
+	/* justify-content: center; */
+	border: .1rem solid var(--black);
+	border-radius: 1rem;
+	margin: 1rem;
+
+	
+	p {
+		font-size: 1.2rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+		a {
+			color: var(--black);
+		}
+	
+	}
+
+
+}
+
+#footer {
+	background-color: var(--main-color);
+	color: var(--black);
+	text-align: center;
+	padding: 1rem;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	
+}
+
+
